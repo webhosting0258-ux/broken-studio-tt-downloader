@@ -1,0 +1,237 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Broken Studio 258 - TikTok Video Downloader | HD No Watermark</title>
+<!-- SEO META -->
+<meta name="description" content="Broken Studio 258 TikTok Video Downloader - Download TikTok videos in HD without watermark. Fast and free tool.">
+
+<meta name="keywords" content="Broken Studio 258, TikTok Downloader, TikTok Video Downloader, HD TikTok Downloader, No Watermark TikTok Downloader">
+
+<meta name="robots" content="index, follow">
+
+<meta name="author" content="Broken Studio 258">
+
+<link rel="canonical" href="https://your-domain.com/">
+
+<!-- OPEN GRAPH -->
+<meta property="og:title" content="Broken Studio 258 TikTok Downloader">
+<meta property="og:description" content="Download TikTok videos in HD without watermark">
+<meta property="og:image" content="https://n.f-a-k.workers.dev/1000434850.jpg">
+<meta property="og:type" content="website">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:#000;
+  color:#eaeaea;
+  text-align:center;
+  padding:15px;
+  overflow-x:hidden;
+}
+
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:radial-gradient(circle at top, rgba(194,161,74,0.08), transparent 60%);
+  animation:bgMove 6s ease-in-out infinite alternate;
+  z-index:-1;
+}
+
+@keyframes bgMove{
+  from{transform:translateY(0px);}
+  to{transform:translateY(10px);}
+}
+
+.logo{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  margin:auto;
+  background:url('https://n.f-a-k.workers.dev/1000434850.jpg');
+  background-size:cover;
+  border:2px solid rgba(194,161,74,0.5);
+  animation:logoFloat 3s ease-in-out infinite;
+  -webkit-box-reflect: below 6px linear-gradient(transparent, rgba(0,0,0,0.35));
+  position:relative;
+  overflow:hidden;
+}
+
+@keyframes logoFloat{
+  0%,100%{transform:translateY(0px);}
+  50%{transform:translateY(-6px);}
+}
+
+.logo::after{
+  content:"";
+  position:absolute;
+  top:-50%;
+  left:-50%;
+  width:200%;
+  height:200%;
+  background:linear-gradient(120deg, transparent 40%, rgba(255,255,255,0.25) 50%, transparent 60%);
+  transform:rotate(25deg);
+  animation:shine 2.8s linear infinite;
+}
+
+@keyframes shine{
+  0%{transform:translateX(-100%) rotate(25deg);}
+  100%{transform:translateX(100%) rotate(25deg);}
+}
+
+h1{
+  font-family:'Cinzel',serif;
+  color:#c2a14a;
+  font-size:2.2rem;
+  margin-top:10px;
+}
+
+.subtitle{
+  color:#aaa;
+  letter-spacing:3px;
+  font-size:0.85rem;
+  margin-bottom:15px;
+}
+
+.box{
+  max-width:520px;
+  margin:20px auto;
+  background:#0b0b0b;
+  padding:20px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,0.08);
+  box-shadow:0 10px 30px rgba(0,0,0,0.6);
+}
+
+input{
+  width:100%;
+  padding:12px;
+  margin:6px 0;
+  border-radius:10px;
+  border:1px solid #222;
+  background:#000;
+  color:#fff;
+  outline:none;
+}
+
+button{
+  padding:12px 20px;
+  border:none;
+  border-radius:25px;
+  background:#c2a14a;
+  color:#000;
+  font-weight:600;
+  cursor:pointer;
+  width:100%;
+  margin-top:8px;
+}
+
+#results{
+  margin-top:20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:12px;
+}
+
+.card{
+  background:#111;
+  border-radius:10px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,0.08);
+  animation:cardIn 0.3s ease;
+}
+
+@keyframes cardIn{
+  from{opacity:0; transform:scale(0.95);}
+  to{opacity:1; transform:scale(1);}
+}
+
+.card video{
+  width:100%;
+  display:block;
+}
+
+.actions{
+  display:flex;
+}
+
+.actions button{
+  flex:1;
+  border-radius:0;
+  font-size:0.75rem;
+}
+
+.actions button:first-child{
+  background:#111;
+  color:#c2a14a;
+}
+
+.actions button:last-child{
+  background:#c2a14a;
+  color:#000;
+}
+
+.tiktok{
+  position:fixed;
+  bottom:15px;
+  right:15px;
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#111;
+  border:1px solid #333;
+  color:#c2a14a;
+}
+</style></head>
+<body><div class="logo"></div>
+<h1>𝑩𝒓𝒐𝒌𝒆𝒏 𝑺𝒕𝒖𝒅𝒊𝒐</h1>
+<div class="subtitle">TIKTOK DOWNLOADER</div><div class="box">
+  <input id="tiktokUrl" placeholder="Paste TikTok URL">
+  <button onclick="downloadVideo()">DOWNLOAD VIDEO</button>  <div id="loading" style="display:none;color:#c2a14a;margin-top:10px;">Loading...</div>
+  <div id="error" style="color:red;margin-top:10px;"></div>
+</div><div id="results"></div><div class="tiktok" onclick="window.open('https://www.tiktok.com/@broken_studio258?_r=1&_t=ZS-96o2iS93tHU')">
+<i class="fab fa-tiktok"></i>
+</div><script>
+async function downloadVideo(){
+  const url = document.getElementById("tiktokUrl").value.trim();
+  const loading = document.getElementById("loading");
+  const error = document.getElementById("error");
+
+  if(!url){ error.innerText="Enter URL"; return; }
+
+  loading.style.display="block";
+  error.innerText="";
+
+  try{
+    const api = `https://www.tikwm.com/api/?url=${encodeURIComponent(url)}`;
+    const res = await fetch(api);
+    const data = await res.json();
+
+    const video = data?.data?.play;
+
+    if(!video) throw new Error("No video");
+
+    document.getElementById("results").innerHTML = `
+      <div class="card">
+        <video controls src="${video}"></video>
+        <div class="actions">
+          <button onclick="window.open('${video}')">VIEW</button>
+          <button onclick="window.open('${video}')">DOWNLOAD</button>
+        </div>
+      </div>
+    `;
+
+  }catch(e){
+    error.innerText="Failed to load video";
+  }
+
+  loading.style.display="none";
+}
+</script></body>
+</html>
